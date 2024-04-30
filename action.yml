@@ -31,6 +31,9 @@ inputs:
   ### Variables for terraform validate ###
   terraform_version:
     description: 'The terraform version to install and use.'
+  terraform_cloud_token:
+    description: 'The terraform token for authentication with private registries.'
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
